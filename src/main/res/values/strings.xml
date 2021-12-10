@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Retriving_Data</string>
+    <string name="email_error">Empty Field</string>
+    <string name="password_error">Empty Field</string>
+    <string name="error_invalid_email">Invalid Email</string>
+    <string name="name_error">Empty Field</string>
+    <string name="phone_error">Empty Field</string>
+    <string name="error_invalid_phone">Invalid Phone no.</string>
+    <string name="error_Empty_Password">Empty Field</string>
+    <string name="error_LowerCase_Password">Must Contain LowerCase Letters[a-z]</string>
+    <string name="error_digitCase_Password">Must Contain digits[0-9]</string>
+    <string name="length_error">Password must contain atleast 8 characters</string>
+    <string name="error_Empty_CPassword">Empty Field</string>
+    <string name="error_Cpassword_Match">Password and Confirm Password Doesn\'t Match</string>
+    <string name="email_Already_Exists">You ar already registered with this email id</string>
+    <string name="register_success">You Are Registered Successfully.</string>
+    <string name="title_activity_dashboard">MainActivity</string>
+    <string name="title_products">Products</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_orders">Orders</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_add_product">Add Product</string>
+    <string name="productTitle_error">Empty Field</string>
+    <string name="productPrice_error">Empty Field</string>
+    <string name="empty_field_error">Empty Field</string>
+
+</resources>

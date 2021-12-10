@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.ProductDisplayActivity"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradientcolor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+
+            android:elevation="0dp"
+            android:minHeight="?attr/actionBarSize">
+
+            <ImageView
+                android:id="@+id/DisplayProduct_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/ic_baseline_arrow_back_ios_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="#00FFFFFF"
+                android:fontFamily="@font/sf_ui_display_regular"
+                android:text="Product Details"
+                android:textColor="@color/white"
+                android:textSize="26dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/TextInputLayoutProduct_Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintTextColor="#FDB746"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/frameLayout2">
+
+                <TextView
+                    android:id="@+id/Product_Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+
+                    android:layout_marginRight="40dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#FDB746"
+                    android:ems="10"
+                    android:fontFamily="@font/sf_ui_display_regular"
+                    android:hint="Product Title"
+                    android:inputType="textPersonName"
+                    android:textSize="20dp"
+                    android:textColor="#767676"
+                    android:text="" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/TextInputLayoutProduct_Price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                app:hintTextColor="#FDB746"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TextInputLayoutProduct_Title">
+
+                <TextView
+                    android:id="@+id/Product_Price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1"
+                    android:backgroundTint="#FDB746"
+                    android:ems="10"
+                    android:fontFamily="@font/sf_ui_display_regular"
+                    android:hint="Product Price (Rs.)"
+                    android:inputType="numberDecimal"
+                    android:textSize="25dp"
+                    android:textColor="@color/black"
+                    android:text="" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/TextInputLayoutInstock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                app:hintTextColor="#FDB746"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TextInputLayoutProduct_Price">
+
+                <TextView
+                    android:id="@+id/Product_stock"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1"
+                    android:backgroundTint="#FDB746"
+                    android:ems="10"
+                    android:fontFamily="@font/sf_ui_display_regular"
+                    android:hint="Stock Details"
+                    android:text=""
+                    android:textColor="#FDB746"
+                    android:textSize="15dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/TextInputLayoutProduct_Description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintTextColor="#FDB746"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TextInputLayoutInstock">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Product Description:"
+                    android:textColor="#FDB746"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/TextInputLayoutInstock" />
+
+                <TextView
+                    android:id="@+id/Product_Description"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+
+                    android:layout_weight="1"
+                    android:backgroundTint="#FDB746"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:hint="Product Description"
+                    android:inputType="textMultiLine"
+                    android:minLines="4"
+                    android:textSize="15dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/TextInputLayoutProduct_Quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintTextColor="#FDB746"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TextInputLayoutProduct_Description">
+
+                <TextView
+                    android:id="@+id/Product_SellerName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+
+                    android:layout_marginRight="40dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#FDB746"
+                    android:ems="10"
+                    android:fontFamily="@font/sf_ui_display_regular"
+                    android:hint="Seller Name"
+                    android:inputType="number"
+                    android:textSize="16dp"
+                    android:textColor="#FDB746"
+                    android:text="" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/Buy_Now"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="#FDB746"
+                android:text="Buy_Now"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.495"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TextInputLayoutProduct_Quantity" />
+            <FrameLayout
+                android:id="@+id/frameLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/Product_Image"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:adjustViewBounds="true"
+
+                    android:background="#DBDBDB" />
+
+
+            </FrameLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</LinearLayout>
